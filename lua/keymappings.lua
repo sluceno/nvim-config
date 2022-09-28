@@ -18,8 +18,8 @@ vim.keymap.set("x", "J", ":move '>+1<CR>gv-gv", { silent = true })
 local opts = { noremap = true, silent = true }
 
 -- Remap comma as leader key
-vim.g.mapleader = ","
-vim.g.maplocalleader = "."
+vim.g.mapleader = "'"
+vim.g.maplocalleader = "'"
 
 -- Insert --
 -- Press jk fast to enter
