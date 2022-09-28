@@ -8,7 +8,7 @@ require("nvim-tree").setup({
             list = {
                 { key = "s", action = "vsplit" },
                 { key = "i", action = "split" },
-                { key = "p", action = "parent_node" },
+                { key = "p", action = "paste" },
             },
         },
     },
