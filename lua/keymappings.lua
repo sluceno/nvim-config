@@ -56,7 +56,7 @@ vim.keymap.set("n", "<leader>D", ":%bd|e#|bd#<CR>", opts)
 
 -- Visual --
 -- Copy to clipboard with Ctrl-C
-vim.keymap.set("v", "<C-c>", "+y>CR>", opts)
+vim.keymap.set("v", "<C-c>", "\"+y<CR>\"", opts)
 
 -- Nvimtree
 vim.keymap.set("n", "<leader>p", ":NvimTreeToggle<cr>", opts)
