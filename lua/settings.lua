@@ -5,7 +5,6 @@ local opt = vim.opt
 ---  VIM ONLY COMMANDS  ---
 cmd("filetype plugin on") -- filetype detection
 cmd("set inccommand=nosplit") -- show what you are substituting in real time
-cmd("set iskeyword+=-") -- treat dash as a separate word
 cmd("set synmaxcol=200") -- Limits the syntax highlighting
 
 --- TERRAFORM FILETYPES ---
