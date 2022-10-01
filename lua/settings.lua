@@ -8,6 +8,30 @@ cmd("set inccommand=nosplit") -- show what you are substituting in real time
 cmd("set iskeyword+=-") -- treat dash as a separate word
 cmd("set synmaxcol=200") -- Limits the syntax highlighting
 
+--- TERRAFORM FILETYPES ---
+require("filetype").setup({
+  overrides = {
+    extensions = {
+      tf = "terraform",
+      tfvars = "terraform",
+      hcl = "hcl",
+      tfstate = "json",
+    },
+    complex = {
+      ["tfstate.backup"] = "json",
+    }
+  }
+})
+
+--- TERRAFORM SETTINGS ---
+cmd("let g:terraform_fmt_on_save=1")
+cmd("let g:terraform_align=1")
+
+vim.api.nvim_create_autocmd({"BufWritePre"}, {
+  pattern = {"*.tf", "*.tfvars"},
+  callback = vim.lsp.buf.formatting_sync,
+})
+
 --- COLORSCHEME ---
 vim.o.termguicolors = true
 vim.o.background = "dark"
