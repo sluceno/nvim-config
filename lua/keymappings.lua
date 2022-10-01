@@ -47,7 +47,7 @@ vim.keymap.set("n", "<S-tab>", ":bn<CR>", opts)
 vim.keymap.set("n", "<leader>d", ":bd<CR>", opts)
 -- Splits & tabs
 vim.keymap.set("n", "<leader>v", ":vert new %<CR>", opts)
-vim.keymap.set("n", "<leader>x", ":new %<CR>", opts)
+vim.keymap.set("n", "<leader>h", ":new %<CR>", opts)
 vim.keymap.set("n", "<leader>d", ":close<CR>", opts)
 vim.keymap.set("n", "<S-l>", ":tabnext<CR>", opts)
 vim.keymap.set("n", "<S-h>", ":tabprevious<CR>", opts)
