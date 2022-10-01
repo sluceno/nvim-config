@@ -15,7 +15,7 @@ vim.keymap.set("x", "J", ":move '>+1<CR>gv-gv", { silent = true })
 -----------------------------
 ------ Custom mappings ------
 -----------------------------
-local opts = { noremap = true, silent = true }
+local opts = { remap = false, silent = true }
 
 -- Remap comma as leader key
 vim.g.mapleader = "'"
