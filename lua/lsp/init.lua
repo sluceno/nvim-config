@@ -53,10 +53,8 @@ capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 local servers = {
     "tsserver",
     "eslint",
-    "sorbet",
     "solargraph",
     "sumneko_lua",
-    "null-ls",
     "terraformls",
     "tflint",
 }
