@@ -21,6 +21,9 @@ local opts = { noremap = true, silent = true }
 vim.g.mapleader = "'"
 vim.g.maplocalleader = "'"
 
+-- LSP Hover
+vim.keymap.set('n', 'K', vim.lsp.buf.hover)
+
 -- Insert --
 -- Press jk fast to enter
 vim.keymap.set("i", "jk", "<ESC>", opts)
