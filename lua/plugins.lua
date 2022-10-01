@@ -194,6 +194,9 @@ return require("packer").startup(function(use)
     -- TODO: Port to Lua
     use("AndrewRadev/splitjoin.vim")
 
+    -- Autoclose
+    use 'm4xshen/autoclose.nvim'
+
     -- Others
     use("tommcdo/vim-exchange")
     use({
