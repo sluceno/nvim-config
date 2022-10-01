@@ -59,7 +59,7 @@ opt.swapfile = false -- creates a swapfile
 opt.timeoutlen = 100 -- time to wait for a mapped sequence to complete (in milliseconds)
 opt.title = true -- set the title of window to the value of the titlestring
 opt.titlestring = "%<%F%=%l/%L - nvim" -- what the title of the window will be set to
-opt.undofile = true -- enable persisten undo
+opt.undofile = false -- disables persisten undo
 opt.updatetime = 300 -- faster completion
 opt.writebackup = false -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 opt.shortmess:append("c") -- don't pass messages to |ins-completion-menu|
