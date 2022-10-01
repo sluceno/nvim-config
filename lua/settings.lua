@@ -75,7 +75,7 @@ opt.colorcolumn = "80" -- highlight the 80th character
 opt.number = true -- set numbered lines
 opt.relativenumber = false -- set relative numbered lines
 opt.signcolumn = "yes" -- always show the sign column, otherwise it would shift the text each time
-opt.wrap = false -- display lines as one long line
+opt.wrap = true -- display long lines as multiple lines
 opt.scrolloff = 4 -- number of lines before scrolling
 opt.sidescrolloff = 2 -- number of cols before scrolling
 
