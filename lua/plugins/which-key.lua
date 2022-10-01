@@ -1,7 +1,7 @@
 local keymap = vim.keymap.set
 require("which-key").setup({
     plugins = {
-        marks = true, -- shows a list of your marks on ' and `
+        marks = false, -- shows a list of your marks on ' and `
         registers = true, -- shows your registers on " in NORMAL or <C-r> in INSERT mode
         -- the presets plugin, adds help for a bunch of default keybindings in Neovim
         -- No actual key bindings are created
